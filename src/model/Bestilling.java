@@ -31,12 +31,12 @@ public class Bestilling {
         return pladser;
     }
 
-    // Sæt metoden for forestilling og oprethold sammenhængen
+    // Sæt metode for forestilling og oprethold sammenhængen
     public void setForestilling(Forestilling forestilling) {
         this.forestilling = forestilling;
     }
 
-    // Metode til at tilføje en plads til bestillingen
+    // En metode til at tilføje en plads til bestillingen
     public void addPlads(Plads plads) {
         if (!pladser.contains(plads)) {
             pladser.add(plads);

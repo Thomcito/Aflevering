@@ -12,6 +12,14 @@ public class Plads {
         this.pris = pris;
         this.pladsType = pladsType;
     }
+    // Ny konstruktor så "RerserveredePåDato" i forestilling kan addes
+    public Plads(int række, int nr) {
+        this.række = række;
+        this.nr = nr;
+        this.pris = 0;
+        this.pladsType = PladsType.STANDARD;
+    }
+
 
     public int getRække() {
         return række;

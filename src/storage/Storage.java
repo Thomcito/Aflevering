@@ -15,7 +15,6 @@ public class Storage {
     private static List<Plads> pladser = new ArrayList<>();
 
     // Metoder til at tilføje objekter til listerne
-
     public static void addForestilling(Forestilling forestilling) {
         if (!forestillinger.contains(forestilling)) {
             forestillinger.add(forestilling);

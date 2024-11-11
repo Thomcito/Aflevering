@@ -23,7 +23,7 @@ public class MainPane extends GridPane {
         this.setHgap(10);
         this.setVgap(10);
 
-        // Forestillinger ListView
+        // Forestillingernes ListView
         Label lblForestillinger = new Label("Forestillinger");
         this.add(lblForestillinger, 0, 0);
 
@@ -33,7 +33,7 @@ public class MainPane extends GridPane {
         this.add(lvwForestillinger, 0, 1);
         lvwForestillinger.getItems().setAll(Storage.getAllForestillinger());
 
-        // Kunder ListView
+        // Kundernes ListView
         Label lblKunder = new Label("Kunder");
         this.add(lblKunder, 1, 0);
 
@@ -43,7 +43,7 @@ public class MainPane extends GridPane {
         this.add(lvwKunder, 1, 1);
         lvwKunder.getItems().setAll(Storage.getAllKunder());
 
-        // Forestilling form
+        // Forestillingens form
         txfForestillingNavn = new TextField();
         txfStartDato = new TextField();
         txfSlutDato = new TextField();
@@ -58,7 +58,7 @@ public class MainPane extends GridPane {
         this.add(txfSlutDato, 0, 7);
         this.add(btnOpretForestilling, 0, 8);
 
-        // Kunde form
+        // Kundens form
         txfKundeNavn = new TextField();
         txfKundeMobil = new TextField();
         Button btnOpretKunde = new Button("Opret kunde");
@@ -71,7 +71,7 @@ public class MainPane extends GridPane {
         this.add(btnOpretKunde, 1, 6);
     }
 
-    // Opretter en ny forestilling
+    // En metode som opretter en ny forestilling
     private void opretForestillingAction() {
         String navn = txfForestillingNavn.getText().trim();
         LocalDate startDato = LocalDate.parse(txfStartDato.getText().trim());
@@ -81,7 +81,7 @@ public class MainPane extends GridPane {
         lvwForestillinger.getItems().setAll(Storage.getAllForestillinger());
     }
 
-    // Opretter en ny kunde
+    // En metode som opretter en ny kunde
     private void opretKundeAction() {
         String navn = txfKundeNavn.getText().trim();
         String mobil = txfKundeMobil.getText().trim();

@@ -11,7 +11,7 @@ public class App extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Teater bestillinger");
 
-        // Initialiser testdata
+        // Initialiser testdataen
         AppInitializer.initStorage();
 
         BorderPane root = new BorderPane();

@@ -16,4 +16,9 @@ public class Kunde {
     public String getMobil() {
         return mobil;
     }
+
+    public String toString() {
+        return navn + " (" + mobil + ")";
+    }
+
 }

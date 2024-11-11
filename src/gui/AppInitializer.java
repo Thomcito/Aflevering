@@ -17,17 +17,17 @@ public class AppInitializer {
 
     // Initialiserer og gemmer data i Storage
     public static void initStorage() {
-        // Opret forestillinger
+        // Oprettelse af forestillinger
         Controller.createForestilling("Evita", LocalDate.of(2023, 8, 10), LocalDate.of(2023, 8, 20));
         Controller.createForestilling("Lykke Per", LocalDate.of(2023, 9, 1), LocalDate.of(2023, 9, 10));
         Controller.createForestilling("Chess", LocalDate.of(2023, 8, 21), LocalDate.of(2023, 8, 30));
 
-        // Opret kunder
+        // Oprettelse af kunder
         Controller.createKunde("Anders Hansen", "11223344");
         Controller.createKunde("Peter Jensen", "12345678");
         Controller.createKunde("Niels Madsen", "12341234");
 
-        // Opret pladser med priser og placering
+        // Oprettelse af pladser med priser og placering
         for (int række = 1; række <= 15; række++) {
             for (int nr = 1; nr <= 20; nr++) {
                 PladsType pladsType;
